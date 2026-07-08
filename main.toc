@@ -1,4 +1,5 @@
 \babel@toc {english}{}\relax 
 \contentsline {chapter}{\numberline {1}Basics of statistics}{1}{chapter.1}%
-\contentsline {chapter}{\nonumberline Bibliography}{2}{chapter*.2}%
+\contentsline {section}{\numberline {1.1}Phasespace}{1}{section.1.1}%
+\contentsline {chapter}{\nonumberline Bibliography}{3}{chapter*.2}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

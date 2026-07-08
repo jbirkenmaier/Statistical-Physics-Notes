@@ -1,0 +1,62 @@
+\begin{figure}[h]
+	\centering
+	\begin{tikzpicture}
+		
+		% --- Linke Seite: Physikalisches System (1D) ---
+		\begin{scope}[shift={(0,0)}]
+			\node at (2.5, 3.6) {\large\textbf{System sketch (1D)}};
+			
+			% Wand und Boden
+			\fill[pattern=north east lines] (-0.3, 0) rectangle (0, 2.5);
+			\draw[thick] (0, 2.5) -- (0, 0) -- (5.5, 0);
+			\fill[pattern=north east lines] (0, -0.3) rectangle (5.5, 0);
+			
+			% Feder
+			\draw[thick, decoration={coil,aspect=0.4,segment length=3mm,amplitude=3mm}, decorate] (0, 0.75) -- (3, 0.75);
+			\node at (1.5, 1.25) {$k$};
+			
+			% Masse
+			\draw[thick, fill=gray!30] (3, 0) rectangle (4.5, 1.5) node[midway] {$m$};
+			
+			% F und v übereinander mit Pfeilen davor/danach
+			% Geschwindigkeit (Oben)
+			\node at (3.75, 2.3) {$v = \dot{x} > 0$};
+			\draw[->, thick] (4.65, 2.3) -- (5.35, 2.3); 
+			
+			% Kraft (Darunter)
+			\draw[<-, thick] (2.15, 1.8) -- (2.85, 1.8); 
+			\node at (3.75, 1.8) {$F = -kx$};
+			
+			% x-Achse
+			\draw[->] (0, -0.8) -- (5.5, -0.8) node[right] {$x$};
+			\draw (2.5, -0.7) -- (2.5, -0.9) node[below] {$x=0$};
+			\draw (3.75, -0.7) -- (3.75, -0.9) node[below] {$x>0$};
+		\end{scope}
+		
+		% --- Rechte Seite: Phasenraum Plot ---
+		\begin{scope}[shift={(10,0.75)}]
+			\node at (0, 3.4) {\large\textbf{Phasespace ($x, p$)}};
+			
+			% Achsen
+			\draw[->, thick] (-3.5,0) -- (3.5,0) node[right] {$x$};
+			\draw[->, thick] (0,-2.5) -- (0,2.5) node[above] {$p = m\dot{x}$};
+			
+			% Harmonischer Oszillator Ellipse (KORRIGIERT: Pfeile im Uhrzeigersinn)
+			\draw[thick, blue!70!black, >=stealth, postaction={decorate, decoration={markings, mark=at position 0.125 with {\arrow{<}}, mark=at position 0.625 with {\arrow{<}}}}] (0,0) ellipse (3cm and 1.5cm);
+			
+			% Beschriftungen
+			\node[blue!70!black, fill=white, inner sep=2pt] at (2.5, 1.8) {$E = \frac{p^2}{2m} + \frac{1}{2}kx^2$};
+			\node at (3.2, 0.3) {$x_{\max}$};
+			\node at (-3.2, 0.3) {$-x_{\max}$};
+			\node at (-0.6, 1.7) {$p_{\max}$};
+			\node at (-0.6, -1.7) {$-p_{\max}$};
+			
+			% Verbindungslinie zur Veranschaulichung
+			\draw[gray, thin, dashed] (-6.25, 0) -- (1.5, 1.299); 
+			\filldraw[gray] (1.5, 1.299) circle (2pt);
+		\end{scope}
+		
+	\end{tikzpicture}
+	\caption{Visualization of the phase space for a one-dimensional harmonic oscillator (mass on a spring) that moves frictionless over a surface. The system is located at $x>0$ and moving to the right ($v>0$), which corresponds to the marked point in the phase space.}
+	\label{fig:phasenraum_beispiel}
+\end{figure}

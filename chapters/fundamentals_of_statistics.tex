@@ -1,3 +1,17 @@
 \chapter{Basics of statistics}
-The fundamental problem we face when dealing with many particles is not that we could not solve the equations of motion for all these particles in principle but that it is just not useful to attempt this. The sheer magnitude of equations you would need to solve would take any given period of time. 
+Imagine we want to describe a system of a huge number of particles.
+The fundamental problem we face when dealing with that many particles is not that we could not solve the equations of motion for all these particles in principle but that it is just not useful to attempt this. The sheer magnitude of equations you would need to solve would take any given period of time. 
 However there are certain quantities that arise from the percieved chaos of the many particles which we can extract using statistics. These quantities emerge from a huge number of particles and do not carry meaning for a small number of particles.
+
+\section{Phasespace}
+Lets imagine a mechanical system with $s$ degrees of freedom. For a three dimensional system this would be
+\begin{align}
+	s=3N\,,
+\end{align}
+where $N$ is the number of particles. 
+That means we have $q_i$ variables where $i=1,...,s$.
+To describe the state of the system completely we need to also know the velocity of every particle, $\dot{q}_i$.
+Normally we use the momentum $p_i=m\,\dot{q}_i$ instead of  $\dot{q}_i$. 
+We can introduce so called phasespace to describe the system. Phasespace is an imagined space that totally describes the state of the system. The axis of phasespace consist of the location variables and the momentum variables. If we imagine a mass on a spring for example which can only move along one axis, we can even visualize its phasespace (figure \ref{fig:phase_space}).
+\input{images/tikz/phase_space.tex}\label{fig:phase_space}
+Be aware that there are multiple ways of defining the phasespace. In our definition, we describe the whole system as one combined point in phase space (This is called a Gamma-Space). In other formulations you could describe every single particle in phasespace individually but this is not what we are doing here.

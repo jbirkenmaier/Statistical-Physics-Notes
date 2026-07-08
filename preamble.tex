@@ -26,7 +26,9 @@
 \definecolor{brandblue}{RGB}{41, 128, 185}     
 \definecolor{lightgrey}{RGB}{247, 249, 250}     
 \definecolor{formulaframe}{RGB}{192, 57, 43}   
-\definecolor{formulaback}{RGB}{254, 245, 245}   
+\definecolor{formulaback}{RGB}{254, 245, 245}  
+\definecolor{friendlybg}{HTML}{E8F5E9}    % Ein sehr helles, sanftes Pastellgrün
+\definecolor{friendlyframe}{HTML}{2E7D32} % Ein sattes, aber warmes Dunkelgrün 
 
 % DESIGN 1: Box for Examples 
 \newtcolorbox[auto counter, number within=chapter]{examplebox}[2][]{%
@@ -58,6 +60,23 @@
 	#1
 }
 
+
+% DESIGN 3: Box for Chapter Summary (Important Terms & Formulas)
+\newtcolorbox{summarybox}[1][]{
+	colback=friendlybg,      % Sanfter Hintergrund
+	colframe=friendlyframe,  % Passender Rahmen
+	coltitle=white,
+	fonttitle=\bfseries\large,
+	title={Key Concepts \& Formulas}, 
+	enhanced,
+	attach boxed title to top center={yshift=-2mm},
+	boxed title style={colback=friendlyframe, arc=1mm},
+	arc=2mm,
+	breakable, 
+	before skip=20pt,
+	after skip=20pt,
+	#1
+}
 % --- Hyperlinks ---
 \usepackage[colorlinks=true, 
 linkcolor=brandblue, 

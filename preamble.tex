@@ -1,0 +1,67 @@
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}  
+\usepackage{microtype}    
+
+% --- Math & Physics ---
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{physics} 
+
+% --- Graphics & Layout ---
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage[dvipsnames]{xcolor} 
+\usepackage{tikz}
+
+% --- Info Boxes (tcolorbox Setup) ---
+\usepackage[most]{tcolorbox}
+\tcbuselibrary{skins, breakable}
+
+% Color definitions
+\definecolor{brandblue}{RGB}{41, 128, 185}     
+\definecolor{lightgrey}{RGB}{247, 249, 250}     
+\definecolor{formulaframe}{RGB}{192, 57, 43}   
+\definecolor{formulaback}{RGB}{254, 245, 245}   
+
+% DESIGN 1: Box for Examples 
+\newtcolorbox[auto counter, number within=chapter]{examplebox}[2][]{%
+	colback=lightgrey,
+	colframe=brandblue,
+	coltitle=white,
+	fonttitle=\bfseries,
+	title={Example \thetcbcounter: #2}, % <--- "Example" statt "Beispiel"
+	enhanced,
+	attach boxed title to top left={yshift=-2mm, xshift=5mm},
+	boxed title style={colback=brandblue, arc=1mm},
+	arc=2mm,
+	breakable, 
+	before skip=15pt,
+	after skip=15pt,
+	#1
+}
+
+% DESIGN 2: Box for Formulas
+\newtcolorbox{formulabox}[1][]{
+	colback=formulaback,
+	colframe=formulaframe,
+	enhanced,
+	boxrule=1.5pt,
+	arc=2mm,
+	before skip=15pt,
+	after skip=15pt,
+	math display, 
+	#1
+}
+
+% --- Hyperlinks ---
+\usepackage[colorlinks=true, 
+linkcolor=brandblue, 
+citecolor=brandblue, 
+urlcolor=brandblue]{hyperref}
+
+% --- Book Metadata ---
+\title{Statistical Physics}
+\author{Johannes Birkenmaier}
+\date{May 2026}

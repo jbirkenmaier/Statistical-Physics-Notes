@@ -1,0 +1,59 @@
+This is BibTeX, Version 0.99d (TeX Live 2023/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+A level-1 auxiliary file: chapters/introduction.aux
+A level-1 auxiliary file: chapters/mathematical_preparations.aux
+A level-1 auxiliary file: chapters/mathematical_preparations_taylor.aux
+A level-1 auxiliary file: chapters/mathematical_preparations_practical_taylor.aux
+A level-1 auxiliary file: chapters/mathematical_preparations_functionals.aux
+A level-1 auxiliary file: chapters/physics_preparations.aux
+A level-1 auxiliary file: chapters/physics_preparations_generalized_coordinates.aux
+A level-1 auxiliary file: chapters/principle_of_least_action.aux
+A level-1 auxiliary file: chapters/principle_of_least_action_action_lagrangian.aux
+A level-1 auxiliary file: chapters/principle_of_least_action_euler_lagrange.aux
+A level-1 auxiliary file: chapters/principle_of_least_action_properties_of_l.aux
+A level-1 auxiliary file: chapters/appendix_solutions.aux
+A level-1 auxiliary file: chapters/appendix_multivariate_taylor_expansion.aux
+The style file: alpha.bst
+Database file #1: literature.bib
+You've used 1 entry,
+            2543 wiz_defined-function locations,
+            581 strings with 5206 characters,
+and the built_in function-call counts, 391 in all, are:
+= -- 35
+> -- 19
+< -- 1
++ -- 6
+- -- 6
+* -- 31
+:= -- 74
+add.period$ -- 4
+call.type$ -- 1
+change.case$ -- 6
+chr.to.int$ -- 1
+cite$ -- 1
+duplicate$ -- 16
+empty$ -- 27
+format.name$ -- 7
+if$ -- 76
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 2
+newline$ -- 9
+num.names$ -- 3
+pop$ -- 5
+preamble$ -- 1
+purify$ -- 7
+quote$ -- 0
+skip$ -- 13
+stack$ -- 0
+substring$ -- 7
+swap$ -- 3
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 4
+warning$ -- 0
+while$ -- 3
+width$ -- 2
+write$ -- 19

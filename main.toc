@@ -1,0 +1,3 @@
+\babel@toc {english}{}\relax 
+\contentsline {chapter}{\nonumberline Bibliography}{1}{chapter*.2}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
